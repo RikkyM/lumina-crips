@@ -27,7 +27,7 @@ const OrderPage = () => {
           style={{ backgroundImage: "url('images/background.png')" }}
           className="bg-cover bg-repeat bg-center opacity-10 absolute inset-0"
         ></div>
-        <div className="overflow-auto h-full  relative p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 2xl max-w-screen-2xl mx-auto ">
+        <div className="overflow-auto h-full  relative p-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 2xl max-w-screen-2xl mx-auto">
           {isLoading ? <LoadingSpinner /> : products.map(renderCard)}
         </div>
       </section>

@@ -55,7 +55,7 @@ const Card = ({ harga, dropdown, image, nama, uniqueId }) => {
           alt={`${nama} ${selectedVariant}`}
           className="rounded-md"
         />
-        <div className="text-lg font-semibold">{nama}</div>
+        <div className="text-lg font-bold">{nama}</div>
       </div>
       {dropdown && (
         <div className="flex flex-col md:flex-row gap-2">

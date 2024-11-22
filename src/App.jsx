@@ -4,7 +4,6 @@ import CartPage from "./pages/cart";
 import OrderPage from "./pages/order";
 import Navbar from "./components/Elements/Navbar";
 
-
 const App = () => {
   return (
     <>

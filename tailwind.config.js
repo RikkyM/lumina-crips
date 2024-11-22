@@ -12,6 +12,7 @@ export default {
         mansel: ["mansel", "sans-serif"],
         cairo: ["cairo play", "sans-serif"],
         belano: ["belanosima", "sans-serif"],
+        magic: ['magic bright serif', 'sans-serif'],
       },
     },
   },

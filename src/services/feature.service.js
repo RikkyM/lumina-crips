@@ -15,6 +15,6 @@ export const features = [
     number: "03",
     title: "Keterjangkauan",
     description:
-      "Camilan dan minuman berkualitas premium dengan harga yang ramah mahasiswa, melalui produksi efisien dan sumber lokal langsung.",
+      "Camilan dan minuman berkualitas premium dengan harga yang ramah, melalui produksi efisien dan sumber lokal langsung.",
   },
 ];

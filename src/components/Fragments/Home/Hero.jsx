@@ -2,8 +2,12 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="h-full">
-      <div className="h-full flex items-center justify-center">
+    <div className="h-full relative">
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center gap-4">
+        <p className="font-magic lowercase rotate-90">scroll</p>
+        <img src="/icon/arrow.png" alt="arrow" className="size-6 rotate-[139deg]" />
+      </div>
+      <div className="h-full flex pt-44 justify-center">
         <div className="max-w-[345px] md:max-w-[600px]">
           <h1 className="font-magic font-bold text-center capitalize text-4xl md:text-5xl">
             lumina crips{" "}

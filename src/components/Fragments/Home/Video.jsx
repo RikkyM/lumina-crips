@@ -8,6 +8,7 @@ const Video = () => {
             title="Lumina Crips | Official Trailer"
             allow="autoplay; clipboard-write; encrypted-media; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           />
           <div className="text-center font-magic capitalize mt-10 text-lg px-4">
             "crafting delightful culinary experiences that satisfy and inspire"

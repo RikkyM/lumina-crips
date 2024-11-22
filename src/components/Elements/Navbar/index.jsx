@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="h-20 w-full p-3 fixed top-0 z-30 bg-[#FEF9D9] shadow-sm">
+      <div className="h-20 w-full p-3 fixed top-0 z-30 bg-[#FFF5E9] shadow-sm">
         <div className="relative overflow-hidden h-full w-full flex justify-between items-center py-5 pr-3 md:pr-5 rounded-lg font-belano">
           <div className="capitalize flex items-center gap-3">
             <Link to="/">

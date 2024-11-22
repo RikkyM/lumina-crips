@@ -5,7 +5,7 @@ const Sidebar = ({ Link, menuButton, setMenuButton }) => {
   return (
     <>
       <div
-        className={`bg-[#FEF9D9] w-full -z-10 absolute top-0 left-0 transition-all duration-[.75s] ease-[cubic-bezier(0.65,0.05,0.36,1)] select-none h-20 ${
+        className={`bg-[#FFF5E9] w-full -z-10 absolute top-0 left-0 transition-all duration-[.75s] ease-[cubic-bezier(0.65,0.05,0.36,1)] select-none h-20 ${
           menuButton ? "h-72" : "h-0"
         }`}
       >

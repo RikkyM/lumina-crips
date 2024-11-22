@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="h-full relative">
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center gap-4">
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center gap-4">
         <p className="font-magic lowercase rotate-90">scroll</p>
         <img src="/icon/arrow.png" alt="arrow" className="size-6 rotate-[139deg]" />
       </div>

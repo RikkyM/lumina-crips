@@ -13,7 +13,25 @@ L.Icon.Default.mergeOptions({
 });
 
 const MapLeaflet = () => {
-  const position = [-2.2196789, 113.9155459];
+  // Array koordinat
+  const locations = [
+    {
+      position: [-2.2196789, 113.9155459],
+      name: "Lumina Crips",
+      link: "https://maps.app.goo.gl/nCumawWp19X5pMiA9",
+    },
+    {
+      position: [-1.670489, 114.814033],
+      name: "Universitas Palangka Raya",
+      link: "#",
+    },
+  ];
+
+  // Menghitung center map dari rata-rata koordinat
+  const center = [
+    locations.reduce((sum, loc) => sum + loc.position[0], 0) / locations.length,
+    locations.reduce((sum, loc) => sum + loc.position[1], 0) / locations.length,
+  ];
 
   return (
     <div className="w-full h-max pt-10 pb-20 relative">
@@ -21,8 +39,8 @@ const MapLeaflet = () => {
         <h4 className="text-center text-2xl font-magic mb-7">Lokasi Kami</h4>
       </div>
       <MapContainer
-        center={position}
-        zoom={13}
+        center={center}
+        zoom={8}
         className="h-[300px] max-w-screen-md w-[90%] mx-auto border border-black relative z-0"
         zoomControl={false}
         doubleClickZoom={false}
@@ -37,11 +55,15 @@ const MapLeaflet = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-        <Marker position={position}>
-          <Popup>
-            <a href="https://maps.app.goo.gl/nCumawWp19X5pMiA9" target="_blank">Lumina Crips</a>
-          </Popup>
-        </Marker>
+        {locations.map((loc, index) => (
+          <Marker key={index} position={loc.position}>
+            <Popup>
+              <a href={loc.link} target="_blank" rel="noopener noreferrer">
+                {loc.name}
+              </a>
+            </Popup>
+          </Marker>
+        ))}
       </MapContainer>
     </div>
   );
